@@ -7,6 +7,6 @@ fh = open(fname)
 for line in fh:
     if not line.startswith('From: '): continue
     line = line.rstrip()
-    # Find email domain using regular expression
+    #Find email domain using regular expression
     x = re.findall('[A-Za-z0-9._%+-]+@([A-Za-z0-9.-]+\.[A-Za-z]{2,6})', line)
     print(x)
